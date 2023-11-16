@@ -20,7 +20,7 @@ async function search() {
 function displayProfileResult(data) {
     const profileResultContainer = document.getElementById('profileResult');
     profileResultContainer.innerHTML = `
-        <h2>${data.name}</h2>
+          <h2> <a href="https://github.com/${document.getElementById('searchInput').value}">${data.name} </a></h2> 
         <p>Followers: ${data.followers}</p>
         <p>Repositories: ${data.public_repos}</p>
     `;
